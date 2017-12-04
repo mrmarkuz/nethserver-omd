@@ -34,5 +34,6 @@ event_actions($event,
     'nethserver-omd-conf' => '02' #must be executed before template expansion
 );
 
-event_services($event, 'omd' => 'restart');
-
+event_services($event, 'omd' => 'restart',
+                       'xinetd' => 'restart'
+);

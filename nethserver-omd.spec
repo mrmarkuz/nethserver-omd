@@ -38,6 +38,7 @@ rm -rf %{buildroot}
 - Added require xinetd
 - Create and restart site
 - Added installation and documentation to README
+- Added xinetd restart
 * Sun Dec 03 2017 Markus Neuberger <info@markusneuberger.at> - 0.1.0-2
 - Added require check-mk-agent
 * Fri Nov 11 2017 Markus Neuberger <info@markusneuberger.at> - 0.1.0-1
