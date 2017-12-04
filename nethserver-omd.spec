@@ -35,6 +35,9 @@ rm -rf %{buildroot}
 %changelog
 * Mon Dec 04 2017 Markus Neuberger <info@markusneuberger.at> - 0.1.0-3
 - Tidy up spec and createlinks
+- Added require xinetd
+- Create and restart site
+- Added installation and documentation to README
 * Sun Dec 03 2017 Markus Neuberger <info@markusneuberger.at> - 0.1.0-2
 - Added require check-mk-agent
 * Fri Nov 11 2017 Markus Neuberger <info@markusneuberger.at> - 0.1.0-1

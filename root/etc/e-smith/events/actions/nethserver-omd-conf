@@ -28,5 +28,5 @@ use strict;
 #use NethServer::Password;
 
 system("omd create monitor");
-
+system("omd restart monitor");
 exit (0);
