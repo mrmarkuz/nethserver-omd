@@ -10,7 +10,7 @@ class OMD extends \Nethgui\Module\AbstractModule implements \NethServer\Module\D
   {
     $host = explode(':',$_SERVER['HTTP_HOST']);
     return array(
-      'url' => "https://".$host[0]."/omd",
+      'url' => "https://".$host[0]."/monitor",
     );
   }
 }

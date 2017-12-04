@@ -1,21 +1,16 @@
 Summary: NethServer omd configuration
 Name: nethserver-omd
 Version: 0.1.0
-Release: 2%{?dist}
+Release: 3%{?dist}
 License: GPL
 URL: %{url_prefix}/%{name} 
 Source0: %{name}-%{version}.tar.gz
 BuildArch: noarch
-
-Requires: omd-labs-edition
-Requires: check-mk-agent
-Requires: nethserver-base
-
-BuildRequires: perl
+Requires: omd-labs-edition, check-mk-agent, nethserver-base
 BuildRequires: nethserver-devtools 
 
 %description
-NethServer omd configuration
+NethServer OMD monitoring
 
 %prep
 %setup
@@ -38,8 +33,9 @@ rm -rf %{buildroot}
 %dir %{_nseventsdir}/%{name}-update
 
 %changelog
+* Mon Dec 04 2017 Markus Neuberger <info@markusneuberger.at> - 0.1.0-3
+- Tidy up spec and createlinks
 * Sun Dec 03 2017 Markus Neuberger <info@markusneuberger.at> - 0.1.0-2
 - Added require check-mk-agent
 * Fri Nov 11 2017 Markus Neuberger <info@markusneuberger.at> - 0.1.0-1
 - First NS7 release
-

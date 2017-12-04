@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/perl -w
 
 #
 # Copyright (C) 2013 Nethesis S.r.l.
@@ -20,19 +20,13 @@
 # along with NethServer.  If not, see <http://www.gnu.org/licenses/>.
 #
 
+package esmith;
+
 use strict;
-use esmith::Build::CreateLinks  qw(:all);
+#use Errno;
+#use esmith::util;
+#use NethServer::Password;
 
-#--------------------------------------------------
-# actions for nethserver-omd-update event
-#--------------------------------------------------
+system("omd create monitor");
 
-my $event = "nethserver-omd-update";
-
-event_actions($event, 
-    'initialize-default-databases' => '00',
-    'nethserver-omd-conf' => '02' #must be executed before template expansion
-);
-
-event_services($event, 'omd' => 'restart');
-
+exit (0);
