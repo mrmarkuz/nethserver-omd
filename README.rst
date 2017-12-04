@@ -17,6 +17,10 @@ rpm -Uvh "https://labs.consol.de/repo/stable/rhel6/i386/labs-consol-stable.rhel6
 
 Install nethserver-omd and browse to https://NETHSERVER/monitor
 
+A site named monitor is created automatically.
+
+You can go to your OMD site monitor via the application menu.
+
 Documentation
 =============
 
