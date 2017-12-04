@@ -6,7 +6,7 @@ License: GPL
 URL: %{url_prefix}/%{name} 
 Source0: %{name}-%{version}.tar.gz
 BuildArch: noarch
-Requires: omd-labs-edition, check-mk-agent, nethserver-base
+Requires: omd-labs-edition, check-mk-agent, nethserver-base, xinetd
 BuildRequires: nethserver-devtools 
 
 %description
