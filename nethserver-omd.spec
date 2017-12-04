@@ -41,5 +41,5 @@ rm -rf %{buildroot}
 - Added xinetd restart
 * Sun Dec 03 2017 Markus Neuberger <info@markusneuberger.at> - 0.1.0-2
 - Added require check-mk-agent
-* Fri Nov 11 2017 Markus Neuberger <info@markusneuberger.at> - 0.1.0-1
+* Fri Nov 10 2017 Markus Neuberger <info@markusneuberger.at> - 0.1.0-1
 - First NS7 release
