@@ -1,7 +1,7 @@
-Summary: NethServer omd configuration
+Summary: NethServer OMD
 Name: nethserver-omd
-Version: 0.1.0
-Release: 3%{?dist}
+Version: 0.0.1
+Release: 4%{?dist}
 License: GPL
 URL: %{url_prefix}/%{name} 
 Source0: %{name}-%{version}.tar.gz
@@ -10,7 +10,7 @@ Requires: omd-labs-edition, check-mk-agent, nethserver-base, xinetd
 BuildRequires: nethserver-devtools 
 
 %description
-NethServer OMD monitoring
+NethServer Open Monitoring Distribution
 
 %prep
 %setup
@@ -33,13 +33,17 @@ rm -rf %{buildroot}
 %dir %{_nseventsdir}/%{name}-update
 
 %changelog
-* Mon Dec 04 2017 Markus Neuberger <info@markusneuberger.at> - 0.1.0-3
+* Sat Jan 24 2017 Markus Neuberger <info@markusneuberger.at> - 0.0.1-4
+- Add to backup
+- Tidy up
+- Edit README
+* Mon Dec 04 2017 Markus Neuberger <info@markusneuberger.at> - 0.0.1-3
 - Tidy up spec and createlinks
 - Added require xinetd
 - Create and restart site
 - Added installation and documentation to README
 - Added xinetd restart
-* Sun Dec 03 2017 Markus Neuberger <info@markusneuberger.at> - 0.1.0-2
+* Sun Dec 03 2017 Markus Neuberger <info@markusneuberger.at> - 0.0.1-2
 - Added require check-mk-agent
-* Fri Nov 10 2017 Markus Neuberger <info@markusneuberger.at> - 0.1.0-1
+* Fri Nov 10 2017 Markus Neuberger <info@markusneuberger.at> - 0.0.1-1
 - First NS7 release

@@ -2,7 +2,8 @@
 nethserver-omd
 ==============
 
-OMD is a monitoring system usable via web gui.
+OMD is a monitoring system based usable via web gui.
+One may use Nagios, Icinga or other monitoring cores.
 
 Installation
 ============
