@@ -33,8 +33,7 @@ rm -rf %{buildroot}
 %dir %{_nseventsdir}/%{name}-update
 
 %changelog
-* Sat Jan 24 2017 Markus Neuberger <info@markusneuberger.at> - 0.0.1-4
-- Add to backup
+* Sat Jan 24 2018 Markus Neuberger <info@markusneuberger.at> - 0.0.1-4
 - Tidy up
 - Edit README
 * Mon Dec 04 2017 Markus Neuberger <info@markusneuberger.at> - 0.0.1-3
